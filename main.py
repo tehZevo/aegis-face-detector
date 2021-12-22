@@ -10,7 +10,7 @@ download_models()
 
 MIN_CONFIDENCE = float(os.getenv("MIN_CONFIDENCE", 0.5))
 PORT = int(os.getenv("PORT", 80))
-PADDING = float(os.getenv("PADDING", 0.1))
+PADDING = float(os.getenv("PADDING", 0.0))
 
 FACE_PROTO = "models/deploy.prototxt.txt"
 FACE_MODEL = "models/res10_300x300_ssd_iter_140000_fp16.caffemodel"
