@@ -4,8 +4,11 @@ WORKDIR /app
 
 COPY requirements.txt ./
 
-# RUN apk add git
 RUN pip install -r requirements.txt
+
+#predownload models
+COPY download_models.py .
+RUN python download_models.py
 
 COPY . .
 
