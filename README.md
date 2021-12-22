@@ -22,3 +22,4 @@ to `/` to get a list of bounds and confidences like so:
 
 ## TODO
 - config env vars for blobFromImage params
+- sort by area
